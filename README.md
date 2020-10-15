@@ -131,7 +131,7 @@ or purchases an item, we have to _retrieve information from a database_. One of
 the most common ways you'll be doing that is to use methods like `find_by_name`
 or `find_by_email` or `find_by_product_id` or...you get the idea. We'll be
 learning much, much more about this later. Here, we're building a simple
-`find_by_name` method that introspects on a class's `.all` class method and
+`find_by_name` method that introspects(looks into or examine) on a class's `.all` class method and
 extracts the instance of the class with a certain name.
 
 Okay, back to your regularly scheduled programming:
@@ -179,9 +179,9 @@ Inside the `Findable.find_by_name` method, we can't use a class-specific class
 variable like `@@artists`, because our method would break when included in any
 class that _didn't_ define such a variable.
 
-Is there a way to reference the collection of _all_ of the instances of a
+Is there a way to reference the collection of all of the instances of a
 class, without specifically referencing class variables that are only defined
-in certain classes?
+inside certain classes?
 
 ### Step 2: Instance Methods
 
